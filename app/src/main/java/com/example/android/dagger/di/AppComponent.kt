@@ -4,7 +4,7 @@ import com.example.android.dagger.registration.RegistrationActivity
 import dagger.Component
 
 // Definition of a Dagger component
-@Component
+@Component(modules = [StorageModule::class])
 interface AppComponent {
     // Classes that can be injected by this Component
     fun inject(activity: RegistrationActivity)
